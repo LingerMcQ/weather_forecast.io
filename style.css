@@ -1,0 +1,285 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #e1e4ec;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    width: 600px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 20px -5px #333;
+    border-radius: 10px;
+    border-collapse: collapse;
+  }
+  .container .top {
+    width: 100%;
+    height: 200px;
+    border-collapse: collapse;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    background: linear-gradient(to right, #6acbe3, #59a5dd);
+  }
+  .container .top > div {
+    display: inline-block;
+    position: absolute;
+  }
+  .container .top .top__dateToday {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    top: 10px;
+    right: 10px;
+  }
+  .container .top .top__weekDay {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    top: 45px;
+    right: 10px;
+  }
+  .container .top .top__site {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    bottom: 10px;
+    right: 10px;
+  }
+  .container .top .top__typeOfWeather {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    top: 12px;
+    left: 10px;
+  }
+  .container .top .top__temperatureAverage {
+    font-size: 54px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    bottom: 5px;
+    left: 10px;
+  }
+  .container .top .top__temperatureMinToMax {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    bottom: 12px;
+    left: 145px;
+    border-top: 0.5px solid white;
+    padding-top: 3px;
+  }
+  .container .top .top__RainfallProb {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    bottom: 36px;
+    left: 145px;
+  }
+  .container .bottom {
+    width: 100%;
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 0px 0px 10px 10px;
+    border-collapse: collapse;
+  }
+  .container .bottom .days {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5a636e;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+  }
+  .container .bottom .days > div {
+    margin-top: 5px;
+  }
+  .container .bottom .days > div:nth-child(1) {
+    margin-top: 0;
+  }
+  .container .bottom .days .bottom__weekDay {
+    font-weight: 500;
+  }
+  .container .bottom .days .bottom__date {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  .container .bottom .days .bottom__temperatureAverage {
+    font-size: 24px;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  .container .bottom .days .bottom__RainfallProb {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    width: 100vw;
+    height: auto;
+  }
+  .container .top {
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 15px 25px;
+    background: linear-gradient(to right, #6acbe3, #59a5dd);
+  }
+  .container .top .top__dateToday {
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    margin-bottom: 0px;
+  }
+  .container .top .top__weekDay {
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    margin-bottom: 20px;
+    padding-left: 2px;
+  }
+  .container .top .top__site {
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    margin-bottom: 5px;
+    padding-left: 2px;
+  }
+  .container .top .top__typeOfWeather {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    margin-bottom: 50px;
+    padding-left: 2px;
+  }
+  .container .top .top__temperatureAverage {
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    margin-bottom: 5px;
+  }
+  .container .top .top__temperatureMinToMax {
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    bottom: 12px;
+    padding-top: 3px;
+    margin-bottom: 2px;
+    padding-left: 2px;
+    display: inline-block;
+  }
+  .container .top .top__RainfallProb {
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    bottom: 36px;
+    padding-left: 15px;
+    display: inline-block;
+  }
+  .container .bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #f3f3f3;
+  }
+  .container .bottom .days {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5a636e;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+  }
+  .container .bottom .days > div {
+    padding: 2px 4px 2px 4px;
+    margin-left: 10px;
+    display: inline-block;
+    position: absolute;
+  }
+  .container .bottom .days > div:nth-child(1) {
+    margin-left: 0px;
+  }
+  .container .bottom .days .bottom__weekDay {
+    font-weight: 500;
+    left: 20px;
+    margin-top: 5px;
+  }
+  .container .bottom .days .bottom__date {
+    font-size: 12px;
+    left: 60px;
+    margin-top: 6px;
+  }
+  .container .bottom .days .bottom__temperatureAverage {
+    font-size: 24px;
+    font-weight: 500;
+    right: 20px;
+    margin-top: 3px;
+  }
+  .container .bottom .days .bottom__RainfallProb {
+    font-size: 16px;
+    right: 100px;
+    margin-top: 6px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
